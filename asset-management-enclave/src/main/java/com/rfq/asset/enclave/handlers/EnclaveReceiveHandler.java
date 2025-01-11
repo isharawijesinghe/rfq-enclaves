@@ -6,11 +6,14 @@ import com.rfq.common.responses.AssetManagementResponse;
 import com.rfq.enclave.enclave.handler.AbstractActionHandler;
 import com.rfq.enclave.enclave.kms.KMSClient;
 import com.rfq.enclave.enclave.nsm.NsmClient;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 @Component
 public class EnclaveReceiveHandler extends AbstractActionHandler<AssetManagementRequest, AssetManagementResponse> {
 
+    private final Logger logger = LogManager.getLogger(EnclaveReceiveHandler.class);
 
     private final NsmClient nsmClient;
 
