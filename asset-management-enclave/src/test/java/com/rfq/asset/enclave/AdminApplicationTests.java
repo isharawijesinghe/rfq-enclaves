@@ -1,6 +1,5 @@
-package com.rfq.admin;
+package com.rfq.asset.enclave;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest

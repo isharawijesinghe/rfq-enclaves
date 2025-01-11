@@ -1,4 +1,4 @@
-package com.rfq.quote.enclave;
+package com.rfq.asset.enclave;
 
 import com.rfq.enclave.autoconfigure.EnableNitroEnclavesEnclaveSide;
 import com.rfq.enclave.enclave.server.NitroEnclaveServer;

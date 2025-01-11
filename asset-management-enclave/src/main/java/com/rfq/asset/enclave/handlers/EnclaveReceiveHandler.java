@@ -1,4 +1,4 @@
-package com.rfq.quote.enclave.handlers;
+package com.rfq.asset.enclave.handlers;
 
 import com.rfq.common.enums.Actions;
 import com.rfq.common.requests.AssetManagementRequest;
