@@ -20,6 +20,7 @@
         <msk-iam-auth.version>2.20.49</msk-iam-auth.version>
         <nitro-enclave.version>1.0.1-SNAPSHOT</nitro-enclave.version>
         <rfq-common.version>1.0-SNAPSHOT</rfq-common.version>
+        <lombok.version>1.18.30</lombok.version>
     </properties>
 
     <modules>
@@ -46,7 +47,7 @@
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.18.30</version>
+                <version>${lombok.version}</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
