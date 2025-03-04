@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.rfq.enclave</groupId>
-    <artifactId>rfq-enclave-parent</artifactId>
+    <artifactId>rfq-enclave</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -25,7 +25,6 @@
 
     <modules>
         <module>asset-management-enclave</module>
-        <module>quote-aggregator-enclave</module>
     </modules>
 
     <dependencyManagement>

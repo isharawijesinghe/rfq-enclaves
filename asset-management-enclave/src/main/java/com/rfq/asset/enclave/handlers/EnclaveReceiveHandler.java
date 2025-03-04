@@ -31,11 +31,9 @@ public class EnclaveReceiveHandler extends AbstractActionHandler<AssetManagement
 
     @Override
     public AssetManagementResponse handle(AssetManagementRequest assetManagementRequest) {
-        String nsmModuleId = this.nsmClient.describeNsm().getModuleId();
         AssetManagementResponse result = new AssetManagementResponse();
-        String hiiii = kmsClient.decrypt(assetManagementRequest.getAwsCredentials(), assetManagementRequest.getValue());
-        System.out.println("hiiiiiiiiiiiiiiiiiiiiiiiiiiiii encryptttttttttttt " + hiiii + " kms client " + kmsClient);
-        result.setValue("Echo from Enclave " + nsmModuleId + ": " + assetManagementRequest.getValue() + " encrypted data " + hiiii);
+        String decryptedResult = kmsClient.decrypt(assetManagementRequest.getAwsCredentials(), assetManagementRequest.getValue());
+        logger.info("Hello from Nitro Enclave.. Decrypted Message: " + decryptedResult);
         return result;
     }
 }

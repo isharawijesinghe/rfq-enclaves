@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.rfq.enclave</groupId>
-		<artifactId>rfq-enclave-parent</artifactId>
+		<artifactId>rfq-enclave</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
 	<groupId>com.rfq</groupId>
